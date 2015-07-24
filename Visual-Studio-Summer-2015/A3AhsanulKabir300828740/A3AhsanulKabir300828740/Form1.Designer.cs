@@ -34,12 +34,15 @@
             this.radiobtn_Add = new System.Windows.Forms.RadioButton();
             this.radiobtn_Remove = new System.Windows.Forms.RadioButton();
             this.listbox_LogContent = new System.Windows.Forms.ListBox();
+            this.textbox_LogName = new System.Windows.Forms.TextBox();
+            this.textbox_LogItem = new System.Windows.Forms.TextBox();
+            this.button_Process = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label_LogName
             // 
             this.label_LogName.AutoSize = true;
-            this.label_LogName.Location = new System.Drawing.Point(51, 73);
+            this.label_LogName.Location = new System.Drawing.Point(51, 40);
             this.label_LogName.Name = "label_LogName";
             this.label_LogName.Size = new System.Drawing.Size(56, 13);
             this.label_LogName.TabIndex = 0;
@@ -49,7 +52,7 @@
             // label_LogItem
             // 
             this.label_LogItem.AutoSize = true;
-            this.label_LogItem.Location = new System.Drawing.Point(51, 116);
+            this.label_LogItem.Location = new System.Drawing.Point(51, 82);
             this.label_LogItem.Name = "label_LogItem";
             this.label_LogItem.Size = new System.Drawing.Size(48, 13);
             this.label_LogItem.TabIndex = 1;
@@ -67,7 +70,7 @@
             // radiobtn_Add
             // 
             this.radiobtn_Add.AutoSize = true;
-            this.radiobtn_Add.Location = new System.Drawing.Point(160, 133);
+            this.radiobtn_Add.Location = new System.Drawing.Point(54, 133);
             this.radiobtn_Add.Name = "radiobtn_Add";
             this.radiobtn_Add.Size = new System.Drawing.Size(44, 17);
             this.radiobtn_Add.TabIndex = 3;
@@ -78,7 +81,7 @@
             // radiobtn_Remove
             // 
             this.radiobtn_Remove.AutoSize = true;
-            this.radiobtn_Remove.Location = new System.Drawing.Point(280, 133);
+            this.radiobtn_Remove.Location = new System.Drawing.Point(151, 133);
             this.radiobtn_Remove.Name = "radiobtn_Remove";
             this.radiobtn_Remove.Size = new System.Drawing.Size(65, 17);
             this.radiobtn_Remove.TabIndex = 4;
@@ -92,16 +95,42 @@
             this.listbox_LogContent.Items.AddRange(new object[] {
             "Test1",
             "Test2"});
-            this.listbox_LogContent.Location = new System.Drawing.Point(171, 183);
+            this.listbox_LogContent.Location = new System.Drawing.Point(151, 183);
             this.listbox_LogContent.Name = "listbox_LogContent";
             this.listbox_LogContent.Size = new System.Drawing.Size(120, 95);
             this.listbox_LogContent.TabIndex = 5;
+            // 
+            // textbox_LogName
+            // 
+            this.textbox_LogName.Location = new System.Drawing.Point(151, 40);
+            this.textbox_LogName.Name = "textbox_LogName";
+            this.textbox_LogName.Size = new System.Drawing.Size(120, 20);
+            this.textbox_LogName.TabIndex = 6;
+            // 
+            // textbox_LogItem
+            // 
+            this.textbox_LogItem.Location = new System.Drawing.Point(151, 82);
+            this.textbox_LogItem.Name = "textbox_LogItem";
+            this.textbox_LogItem.Size = new System.Drawing.Size(120, 20);
+            this.textbox_LogItem.TabIndex = 7;
+            // 
+            // button_Process
+            // 
+            this.button_Process.Location = new System.Drawing.Point(54, 297);
+            this.button_Process.Name = "button_Process";
+            this.button_Process.Size = new System.Drawing.Size(75, 23);
+            this.button_Process.TabIndex = 8;
+            this.button_Process.Text = "Process";
+            this.button_Process.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(545, 303);
+            this.ClientSize = new System.Drawing.Size(324, 343);
+            this.Controls.Add(this.button_Process);
+            this.Controls.Add(this.textbox_LogItem);
+            this.Controls.Add(this.textbox_LogName);
             this.Controls.Add(this.listbox_LogContent);
             this.Controls.Add(this.radiobtn_Remove);
             this.Controls.Add(this.radiobtn_Add);
@@ -123,6 +152,9 @@
         private System.Windows.Forms.RadioButton radiobtn_Add;
         private System.Windows.Forms.RadioButton radiobtn_Remove;
         private System.Windows.Forms.ListBox listbox_LogContent;
+        private System.Windows.Forms.TextBox textbox_LogName;
+        private System.Windows.Forms.TextBox textbox_LogItem;
+        private System.Windows.Forms.Button button_Process;
     }
 }
 
