@@ -49,5 +49,11 @@ namespace Test2Practice_Question_3
                 }
             }
         }
+
+        private void labelCreationInformationOutput_Click(object sender, EventArgs e)
+        {
+            //make this button read from user clicks
+            Console.WriteLine("{0}", checkedListBox1.FormatString.ToString());
+        }
     }
 }

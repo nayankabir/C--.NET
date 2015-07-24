@@ -77,6 +77,7 @@
             this.labelCreationInformationOutput.Size = new System.Drawing.Size(37, 13);
             this.labelCreationInformationOutput.TabIndex = 3;
             this.labelCreationInformationOutput.Text = "<Info>";
+            this.labelCreationInformationOutput.Click += new System.EventHandler(this.labelCreationInformationOutput_Click);
             // 
             // button1
             // 
