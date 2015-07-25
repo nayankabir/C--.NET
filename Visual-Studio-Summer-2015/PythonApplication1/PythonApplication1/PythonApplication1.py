@@ -50,7 +50,6 @@ class RockStar:
         os.environ['GIT_COMMITTER_DATE'] = date_in_iso
         self.repo.index.commit(message)
 
-        'sdcc
         
     def _get_random_time(self):
         return time(hour=randint(0, 23), minute=randint(0, 59),
@@ -73,6 +72,7 @@ class RockStar:
                 self._edit_and_commit(str(uuid.uuid1()), commit_date)
         self._make_last_commit()
         print('\nYou are now a Rockstar Programmer!')
+        print('Hello World')
 
 
 @click.command()
