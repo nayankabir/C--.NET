@@ -77,6 +77,7 @@
             this.radiobtn_Add.TabStop = true;
             this.radiobtn_Add.Text = "Add";
             this.radiobtn_Add.UseVisualStyleBackColor = true;
+            this.radiobtn_Add.CheckedChanged += new System.EventHandler(this.radiobtn_Add_CheckedChanged);
             // 
             // radiobtn_Remove
             // 
@@ -88,6 +89,7 @@
             this.radiobtn_Remove.TabStop = true;
             this.radiobtn_Remove.Text = "Remove";
             this.radiobtn_Remove.UseVisualStyleBackColor = true;
+            this.radiobtn_Remove.CheckedChanged += new System.EventHandler(this.radiobtn_Remove_CheckedChanged);
             // 
             // listbox_LogContent
             // 
@@ -106,6 +108,7 @@
             this.textbox_LogName.Name = "textbox_LogName";
             this.textbox_LogName.Size = new System.Drawing.Size(120, 20);
             this.textbox_LogName.TabIndex = 6;
+            this.textbox_LogName.Text = "My Log";
             // 
             // textbox_LogItem
             // 
@@ -113,6 +116,7 @@
             this.textbox_LogItem.Name = "textbox_LogItem";
             this.textbox_LogItem.Size = new System.Drawing.Size(120, 20);
             this.textbox_LogItem.TabIndex = 7;
+            this.textbox_LogItem.TextChanged += new System.EventHandler(this.textbox_LogItem_TextChanged);
             // 
             // button_Process
             // 
@@ -122,6 +126,7 @@
             this.button_Process.TabIndex = 8;
             this.button_Process.Text = "Process";
             this.button_Process.UseVisualStyleBackColor = true;
+            this.button_Process.Click += new System.EventHandler(this.button_Process_Click);
             // 
             // Form1
             // 
