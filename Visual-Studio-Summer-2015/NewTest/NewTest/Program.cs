@@ -10,7 +10,7 @@ namespace NewTest
     {
         private static void Main(string[] args)
         {
-            //heres some code. testing git repo
+            //heres some code. testing git repos
         }
     }
 }
