@@ -41,14 +41,19 @@ namespace A3AhsanulKabir300828740
 
         private void button_Process_Click(object sender, EventArgs e)
         {
-            if (this.textbox_LogItem.Text != null)
+            while (this.textbox_LogItem.Text != null)
             {
                 //enter calculation
-                if (VScroll)
+                if (radiobtn_Add.Checked)
                 {
+                    listbox_LogContent.Items.Add(textbox_LogItem);
+                    textbox_LogItem.Text = null;
+                    radiobtn_Add.
+                    break;
                 }
-                else if (VScroll)
+                else if (radiobtn_Remove.Checked)
                 {
+                    listbox_LogContent.Items.Remove(textbox_LogItem);
                 }
 
                 MessageBox.Show(result);
