@@ -41,26 +41,28 @@ namespace A3AhsanulKabir300828740
 
         private void button_Process_Click(object sender, EventArgs e)
         {
-            while (this.textbox_LogItem.Text != null)
+            while (textbox_LogItem.Text != null)
             {
                 //enter calculation
-                if (radiobtn_Add.Checked)
+                if (radiobtn_Add.Checked == true)
                 {
-                    listbox_LogContent.Items.Add(textbox_LogItem);
+                    listbox_LogContent.Items.Add(textbox_LogItem.ToString());
                     textbox_LogItem.Text = null;
-                    radiobtn_Add.
+                    radiobtn_Add.Checked = false;
                     break;
                 }
-                else if (radiobtn_Remove.Checked)
+                else if (radiobtn_Remove.Checked == true)
                 {
-                    listbox_LogContent.Items.Remove(textbox_LogItem);
+                    listbox_LogContent.Items.Remove(textbox_LogItem.ToString());
+                    textbox_LogItem.Text = null;
+                    radiobtn_Remove.Checked = false;
+                    break;
                 }
-
-                MessageBox.Show(result);
             }
-            else if (this.textbox_LogItem.Text == null)
+            while (textbox_LogItem.Text == null)
             {
                 MessageBox.Show(@"Hey man you gotta enter something");
+                break;
             }
         }
 
