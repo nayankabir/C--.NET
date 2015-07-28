@@ -44,18 +44,16 @@ namespace A3AhsanulKabir300828740
             while (textbox_LogItem.Text != null)
             {
                 //enter calculation
-                if (radiobtn_Add.Checked == true)
+                if (radiobtn_Add.Checked)
                 {
-                    listbox_LogContent.Items.Add(textbox_LogItem.ToString());
+                    listbox_LogContent.Items.Add(textbox_LogItem.Text);
                     textbox_LogItem.Text = null;
-                    radiobtn_Add.Checked = false;
                     break;
                 }
-                else if (radiobtn_Remove.Checked == true)
+                else if (radiobtn_Remove.Checked)
                 {
-                    listbox_LogContent.Items.Remove(textbox_LogItem.ToString());
+                    listbox_LogContent.Items.Remove(textbox_LogItem.Text);
                     textbox_LogItem.Text = null;
-                    radiobtn_Remove.Checked = false;
                     break;
                 }
             }
