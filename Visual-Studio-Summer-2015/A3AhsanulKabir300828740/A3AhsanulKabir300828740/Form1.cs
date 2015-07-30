@@ -57,7 +57,7 @@ namespace A3AhsanulKabir300828740
                     break;
                 }
             }
-            while (textbox_LogItem.Text == null)
+            while (string.IsNullOrEmpty(textbox_LogItem.Text))
             {
                 MessageBox.Show(@"Hey man you gotta enter something");
                 break;
