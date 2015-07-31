@@ -25,25 +25,25 @@ namespace A3AhsanulKabir300828740
 
         private void radiobtn_Add_CheckedChanged(object sender, EventArgs e)
         {
-            if (radiobtn_Add.Checked == true)
-            {
-                WhatUserSelected = 1; //or am i supposed to put the actual calculation here?
-            }
         }
 
         private void radiobtn_Remove_CheckedChanged(object sender, EventArgs e)
         {
-            if (radiobtn_Remove.Checked == true)
-            {
-                WhatUserSelected = 2;
-            }
         }
 
         private void button_Process_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(textbox_LogItem.Text))
             {
-                MessageBox.Show(@"Hey man you gotta enter something");
+                MessageBox.Show(@"Hey you gotta enter something");
+                radiobtn_Add.Checked = false;
+                radiobtn_Remove.Checked = false;
+            }
+            if (!radiobtn_Add.Checked && !radiobtn_Remove.Checked && !string.IsNullOrEmpty(textbox_LogItem.Text))
+            {
+                MessageBox.Show("Please select either Add or Remove. Try again.");
+                textbox_LogItem.Text = null;
+                radiobtn_Remove.Checked = false;
             }
             else if (textbox_LogItem.Text != null)
             {
@@ -52,11 +52,20 @@ namespace A3AhsanulKabir300828740
                 {
                     listbox_LogContent.Items.Add(textbox_LogItem.Text);
                     textbox_LogItem.Text = null;
+                    radiobtn_Add.Checked = false;
                 }
-                else if (radiobtn_Remove.Checked)
+                if (radiobtn_Remove.Checked)
                 {
+                    if (!listbox_LogContent.Items.Contains(textbox_LogItem.Text))
+                    {
+                        MessageBox.Show("This doesn't exist in the Log Items. Try again.");
+                        textbox_LogItem.Text = null;
+                        radiobtn_Remove.Checked = false;
+                    }
+
                     listbox_LogContent.Items.Remove(textbox_LogItem.Text);
                     textbox_LogItem.Text = null;
+                    radiobtn_Remove.Checked = false;
                 }
             }
         }
