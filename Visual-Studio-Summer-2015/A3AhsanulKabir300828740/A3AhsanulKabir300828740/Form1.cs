@@ -41,30 +41,31 @@ namespace A3AhsanulKabir300828740
 
         private void button_Process_Click(object sender, EventArgs e)
         {
-            while (textbox_LogItem.Text != null)
+            if (string.IsNullOrEmpty(textbox_LogItem.Text))
             {
-                //enter calculation
+                MessageBox.Show(@"Hey man you gotta enter something");
+            }
+            else if (textbox_LogItem.Text != null)
+            {
+                //enter calculations
                 if (radiobtn_Add.Checked)
                 {
                     listbox_LogContent.Items.Add(textbox_LogItem.Text);
                     textbox_LogItem.Text = null;
-                    break;
                 }
                 else if (radiobtn_Remove.Checked)
                 {
                     listbox_LogContent.Items.Remove(textbox_LogItem.Text);
                     textbox_LogItem.Text = null;
-                    break;
                 }
-            }
-            while (string.IsNullOrEmpty(textbox_LogItem.Text))
-            {
-                MessageBox.Show(@"Hey man you gotta enter something");
-                break;
             }
         }
 
         private void textbox_LogItem_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void radiobtn_Add_MouseClick(object sender, MouseEventArgs e)
         {
         }
     }

@@ -78,6 +78,7 @@
             this.radiobtn_Add.Text = "Add";
             this.radiobtn_Add.UseVisualStyleBackColor = true;
             this.radiobtn_Add.CheckedChanged += new System.EventHandler(this.radiobtn_Add_CheckedChanged);
+            this.radiobtn_Add.MouseClick += new System.Windows.Forms.MouseEventHandler(this.radiobtn_Add_MouseClick);
             // 
             // radiobtn_Remove
             // 
