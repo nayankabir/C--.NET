@@ -11,6 +11,7 @@ namespace NewTest
         private static void Main(string[] args)
         {
             //heres some code. testing git repository
+            Console.WriteLine("hi");
         }
     }
 }
