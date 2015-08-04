@@ -15,13 +15,6 @@ namespace A4AhsanulKabir300828740
         public Form1()
         {
             InitializeComponent();
-
-            Form1 testForm = new Form1();
-
-            for (int i = 0; i < 10; i++)
-            {
-                //array?
-            }
         }
     }
 }
