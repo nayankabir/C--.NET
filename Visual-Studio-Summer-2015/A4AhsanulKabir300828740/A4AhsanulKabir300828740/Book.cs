@@ -12,16 +12,41 @@ namespace A4AhsanulKabir300828740
         private double price;
         private int year;
 
-        public Book(string Title, string Author, double Price, int Year)
+        public Book(string title, string author, double price, int year)
         {
-            this.title = Title;
-            this.author = Author;
-            this.price = Price;
+            this.title = title;
+            this.author = author;
+            this.price = price;
+            this.year = year;
         }
 
-        public void MyMethod()
+        public string Title
         {
-            throw new NotImplementedException();
+            get { return title; }
+            set { title = value; }
+        }
+
+        public string Author
+        {
+            get { return author; }
+            set { author = value; }
+        }
+
+        public double Price
+        {
+            get { return price; }
+            set { price = value; }
+        }
+
+        public int Year
+        {
+            get { return year; }
+            set { year = value; }
+        }
+
+        public override string ToString()
+        {
+            return string.Format("{0} \t{1} \t{2:C} \t{3}", title, author, price, year);
         }
     }
 }
