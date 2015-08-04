@@ -28,122 +28,122 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.inputTxtBox_Title = new System.Windows.Forms.TextBox();
+            this.inputTxtBox_Author = new System.Windows.Forms.TextBox();
+            this.btn_generateReport = new System.Windows.Forms.Button();
+            this.label_selectionCriteria = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.radiobtn_Price = new System.Windows.Forms.RadioButton();
+            this.radioBtn_PublicationYr = new System.Windows.Forms.RadioButton();
+            this.outputListBox_Report = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // textBox1
+            // inputTxtBox_Title
             // 
-            this.textBox1.Location = new System.Drawing.Point(101, 70);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.inputTxtBox_Title.Location = new System.Drawing.Point(101, 70);
+            this.inputTxtBox_Title.Name = "inputTxtBox_Title";
+            this.inputTxtBox_Title.Size = new System.Drawing.Size(100, 20);
+            this.inputTxtBox_Title.TabIndex = 0;
             // 
-            // textBox2
+            // inputTxtBox_Author
             // 
-            this.textBox2.Location = new System.Drawing.Point(101, 107);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.inputTxtBox_Author.Location = new System.Drawing.Point(101, 107);
+            this.inputTxtBox_Author.Name = "inputTxtBox_Author";
+            this.inputTxtBox_Author.Size = new System.Drawing.Size(100, 20);
+            this.inputTxtBox_Author.TabIndex = 1;
             // 
-            // button1
+            // btn_generateReport
             // 
-            this.button1.Location = new System.Drawing.Point(49, 143);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(152, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_generateReport.Location = new System.Drawing.Point(49, 143);
+            this.btn_generateReport.Name = "btn_generateReport";
+            this.btn_generateReport.Size = new System.Drawing.Size(152, 23);
+            this.btn_generateReport.TabIndex = 2;
+            this.btn_generateReport.Text = "Generate Report";
+            this.btn_generateReport.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // label_selectionCriteria
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(43, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
+            this.label_selectionCriteria.AutoSize = true;
+            this.label_selectionCriteria.Location = new System.Drawing.Point(43, 13);
+            this.label_selectionCriteria.Name = "label_selectionCriteria";
+            this.label_selectionCriteria.Size = new System.Drawing.Size(161, 13);
+            this.label_selectionCriteria.TabIndex = 3;
+            this.label_selectionCriteria.Text = "Selection Criteria (Empty for ALL)";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(46, 70);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(27, 13);
             this.label2.TabIndex = 4;
-            this.label2.Text = "label2";
+            this.label2.Text = "Title";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(46, 107);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 5;
-            this.label3.Text = "label3";
+            this.label3.Text = "Author";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(247, 13);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(44, 13);
             this.label4.TabIndex = 6;
-            this.label4.Text = "label4";
+            this.label4.Text = "Sort By:";
             // 
-            // radioButton1
+            // radiobtn_Price
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(250, 66);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(85, 17);
-            this.radioButton1.TabIndex = 7;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radiobtn_Price.AutoSize = true;
+            this.radiobtn_Price.Location = new System.Drawing.Point(250, 66);
+            this.radiobtn_Price.Name = "radiobtn_Price";
+            this.radiobtn_Price.Size = new System.Drawing.Size(49, 17);
+            this.radiobtn_Price.TabIndex = 7;
+            this.radiobtn_Price.TabStop = true;
+            this.radiobtn_Price.Text = "Price";
+            this.radiobtn_Price.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // radioBtn_PublicationYr
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(250, 107);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(85, 17);
-            this.radioButton2.TabIndex = 8;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioBtn_PublicationYr.AutoSize = true;
+            this.radioBtn_PublicationYr.Location = new System.Drawing.Point(250, 107);
+            this.radioBtn_PublicationYr.Name = "radioBtn_PublicationYr";
+            this.radioBtn_PublicationYr.Size = new System.Drawing.Size(102, 17);
+            this.radioBtn_PublicationYr.TabIndex = 8;
+            this.radioBtn_PublicationYr.TabStop = true;
+            this.radioBtn_PublicationYr.Text = "Publication Year";
+            this.radioBtn_PublicationYr.UseVisualStyleBackColor = true;
             // 
-            // listBox1
+            // outputListBox_Report
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(46, 185);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(289, 82);
-            this.listBox1.TabIndex = 9;
+            this.outputListBox_Report.FormattingEnabled = true;
+            this.outputListBox_Report.Location = new System.Drawing.Point(46, 185);
+            this.outputListBox_Report.Name = "outputListBox_Report";
+            this.outputListBox_Report.Size = new System.Drawing.Size(289, 82);
+            this.outputListBox_Report.TabIndex = 9;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(377, 304);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.outputListBox_Report);
+            this.Controls.Add(this.radioBtn_PublicationYr);
+            this.Controls.Add(this.radiobtn_Price);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label_selectionCriteria);
+            this.Controls.Add(this.btn_generateReport);
+            this.Controls.Add(this.inputTxtBox_Author);
+            this.Controls.Add(this.inputTxtBox_Title);
             this.Name = "Form1";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Book Report";
@@ -154,16 +154,16 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox inputTxtBox_Title;
+        private System.Windows.Forms.TextBox inputTxtBox_Author;
+        private System.Windows.Forms.Button btn_generateReport;
+        private System.Windows.Forms.Label label_selectionCriteria;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.RadioButton radiobtn_Price;
+        private System.Windows.Forms.RadioButton radioBtn_PublicationYr;
+        private System.Windows.Forms.ListBox outputListBox_Report;
     }
 }
 
