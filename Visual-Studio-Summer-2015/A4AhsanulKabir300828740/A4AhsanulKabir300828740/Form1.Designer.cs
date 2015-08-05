@@ -62,6 +62,7 @@
             this.btnReport.TabIndex = 2;
             this.btnReport.Text = "Generate Report";
             this.btnReport.UseVisualStyleBackColor = true;
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
             // lblSelect
             // 
