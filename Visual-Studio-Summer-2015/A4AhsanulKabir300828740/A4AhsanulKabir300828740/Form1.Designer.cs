@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.txtAuthor = new System.Windows.Forms.TextBox();
             this.btnReport = new System.Windows.Forms.Button();
@@ -38,6 +39,11 @@
             this.rbPrice = new System.Windows.Forms.RadioButton();
             this.rbYear = new System.Windows.Forms.RadioButton();
             this.lbxReport = new System.Windows.Forms.ListBox();
+            this.assignment4DataSet = new A4AhsanulKabir300828740.Assignment4DataSet();
+            this.table1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.table_1TableAdapter = new A4AhsanulKabir300828740.Assignment4DataSetTableAdapters.Table_1TableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.assignment4DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.table1BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTitle
@@ -124,11 +130,26 @@
             // 
             // lbxReport
             // 
+            this.lbxReport.DataSource = this.table1BindingSource;
             this.lbxReport.FormattingEnabled = true;
             this.lbxReport.Location = new System.Drawing.Point(46, 185);
             this.lbxReport.Name = "lbxReport";
             this.lbxReport.Size = new System.Drawing.Size(289, 82);
             this.lbxReport.TabIndex = 9;
+            // 
+            // assignment4DataSet
+            // 
+            this.assignment4DataSet.DataSetName = "Assignment4DataSet";
+            this.assignment4DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // table1BindingSource
+            // 
+            this.table1BindingSource.DataMember = "Table_1";
+            this.table1BindingSource.DataSource = this.assignment4DataSet;
+            // 
+            // table_1TableAdapter
+            // 
+            this.table_1TableAdapter.ClearBeforeFill = true;
             // 
             // Form1
             // 
@@ -148,6 +169,9 @@
             this.Name = "Form1";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Book Report";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.assignment4DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.table1BindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,6 +189,9 @@
         private System.Windows.Forms.RadioButton rbPrice;
         private System.Windows.Forms.RadioButton rbYear;
         private System.Windows.Forms.ListBox lbxReport;
+        private Assignment4DataSet assignment4DataSet;
+        private System.Windows.Forms.BindingSource table1BindingSource;
+        private Assignment4DataSetTableAdapters.Table_1TableAdapter table_1TableAdapter;
     }
 }
 

@@ -22,5 +22,12 @@ namespace A4AhsanulKabir300828740
             //write code that generates a book report
             //
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'assignment4DataSet.Table_1' table. You can move, or remove it, as needed.
+            this.table_1TableAdapter.Fill(this.assignment4DataSet.Table_1);
+
+        }
     }
 }
