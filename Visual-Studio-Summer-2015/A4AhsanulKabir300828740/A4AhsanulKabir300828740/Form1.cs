@@ -27,7 +27,14 @@ namespace A4AhsanulKabir300828740
         {
             // TODO: This line of code loads data into the 'assignment4DataSet.Table_1' table. You can move, or remove it, as needed.
             this.table_1TableAdapter.Fill(this.assignment4DataSet.Table_1);
+        }
 
+        private void txtTitle_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txtAuthor_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }

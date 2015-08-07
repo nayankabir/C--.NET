@@ -39,11 +39,11 @@
             this.rbPrice = new System.Windows.Forms.RadioButton();
             this.rbYear = new System.Windows.Forms.RadioButton();
             this.lbxReport = new System.Windows.Forms.ListBox();
-            this.assignment4DataSet = new A4AhsanulKabir300828740.Assignment4DataSet();
             this.table1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.assignment4DataSet = new A4AhsanulKabir300828740.Assignment4DataSet();
             this.table_1TableAdapter = new A4AhsanulKabir300828740.Assignment4DataSetTableAdapters.Table_1TableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.assignment4DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assignment4DataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTitle
@@ -52,6 +52,7 @@
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.Size = new System.Drawing.Size(100, 20);
             this.txtTitle.TabIndex = 0;
+            this.txtTitle.TextChanged += new System.EventHandler(this.txtTitle_TextChanged);
             // 
             // txtAuthor
             // 
@@ -59,6 +60,7 @@
             this.txtAuthor.Name = "txtAuthor";
             this.txtAuthor.Size = new System.Drawing.Size(100, 20);
             this.txtAuthor.TabIndex = 1;
+            this.txtAuthor.TextChanged += new System.EventHandler(this.txtAuthor_TextChanged);
             // 
             // btnReport
             // 
@@ -137,15 +139,15 @@
             this.lbxReport.Size = new System.Drawing.Size(289, 82);
             this.lbxReport.TabIndex = 9;
             // 
-            // assignment4DataSet
-            // 
-            this.assignment4DataSet.DataSetName = "Assignment4DataSet";
-            this.assignment4DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // table1BindingSource
             // 
             this.table1BindingSource.DataMember = "Table_1";
             this.table1BindingSource.DataSource = this.assignment4DataSet;
+            // 
+            // assignment4DataSet
+            // 
+            this.assignment4DataSet.DataSetName = "Assignment4DataSet";
+            this.assignment4DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // table_1TableAdapter
             // 
@@ -170,8 +172,8 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Book Report";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.assignment4DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assignment4DataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
