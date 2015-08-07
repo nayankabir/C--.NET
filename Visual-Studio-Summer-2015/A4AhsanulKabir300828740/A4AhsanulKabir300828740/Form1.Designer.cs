@@ -39,11 +39,24 @@
             this.rbPrice = new System.Windows.Forms.RadioButton();
             this.rbYear = new System.Windows.Forms.RadioButton();
             this.lbxReport = new System.Windows.Forms.ListBox();
-            this.table1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.table1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.assignment4DataSet = new A4AhsanulKabir300828740.Assignment4DataSet();
+            this.table1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.table_1TableAdapter = new A4AhsanulKabir300828740.Assignment4DataSetTableAdapters.Table_1TableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.table1BindingSource)).BeginInit();
+            this.assignment4DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.assignment4DataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.assignment4DataSetBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.assignment4DataSetFinal = new A4AhsanulKabir300828740.Assignment4DataSetFinal();
+            this.table1BindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.table_1TableAdapter1 = new A4AhsanulKabir300828740.Assignment4DataSetFinalTableAdapters.Table_1TableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.table1BindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.assignment4DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.table1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assignment4DataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assignment4DataSetBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assignment4DataSetBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assignment4DataSetFinal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.table1BindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTitle
@@ -132,26 +145,61 @@
             // 
             // lbxReport
             // 
-            this.lbxReport.DataSource = this.table1BindingSource;
+            this.lbxReport.DataSource = this.table1BindingSource2;
             this.lbxReport.FormattingEnabled = true;
             this.lbxReport.Location = new System.Drawing.Point(46, 185);
             this.lbxReport.Name = "lbxReport";
             this.lbxReport.Size = new System.Drawing.Size(289, 82);
             this.lbxReport.TabIndex = 9;
+            this.lbxReport.SelectedIndexChanged += new System.EventHandler(this.lbxReport_SelectedIndexChanged);
             // 
-            // table1BindingSource
+            // table1BindingSource1
             // 
-            this.table1BindingSource.DataMember = "Table_1";
-            this.table1BindingSource.DataSource = this.assignment4DataSet;
+            this.table1BindingSource1.DataMember = "Table_1";
+            this.table1BindingSource1.DataSource = this.assignment4DataSet;
             // 
             // assignment4DataSet
             // 
             this.assignment4DataSet.DataSetName = "Assignment4DataSet";
             this.assignment4DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // table1BindingSource
+            // 
+            this.table1BindingSource.DataMember = "Table_1";
+            this.table1BindingSource.DataSource = this.assignment4DataSet;
+            // 
             // table_1TableAdapter
             // 
             this.table_1TableAdapter.ClearBeforeFill = true;
+            // 
+            // assignment4DataSetBindingSource
+            // 
+            this.assignment4DataSetBindingSource.DataSource = this.assignment4DataSet;
+            this.assignment4DataSetBindingSource.Position = 0;
+            // 
+            // assignment4DataSetBindingSource1
+            // 
+            this.assignment4DataSetBindingSource1.DataSource = this.assignment4DataSet;
+            this.assignment4DataSetBindingSource1.Position = 0;
+            // 
+            // assignment4DataSetBindingSource2
+            // 
+            this.assignment4DataSetBindingSource2.DataSource = this.assignment4DataSet;
+            this.assignment4DataSetBindingSource2.Position = 0;
+            // 
+            // assignment4DataSetFinal
+            // 
+            this.assignment4DataSetFinal.DataSetName = "Assignment4DataSetFinal";
+            this.assignment4DataSetFinal.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // table1BindingSource2
+            // 
+            this.table1BindingSource2.DataMember = "Table_1";
+            this.table1BindingSource2.DataSource = this.assignment4DataSetFinal;
+            // 
+            // table_1TableAdapter1
+            // 
+            this.table_1TableAdapter1.ClearBeforeFill = true;
             // 
             // Form1
             // 
@@ -172,8 +220,14 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Book Report";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.table1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.table1BindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.assignment4DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.table1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assignment4DataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assignment4DataSetBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assignment4DataSetBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assignment4DataSetFinal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.table1BindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,6 +248,13 @@
         private Assignment4DataSet assignment4DataSet;
         private System.Windows.Forms.BindingSource table1BindingSource;
         private Assignment4DataSetTableAdapters.Table_1TableAdapter table_1TableAdapter;
+        private System.Windows.Forms.BindingSource assignment4DataSetBindingSource;
+        private System.Windows.Forms.BindingSource table1BindingSource1;
+        private System.Windows.Forms.BindingSource assignment4DataSetBindingSource1;
+        private System.Windows.Forms.BindingSource assignment4DataSetBindingSource2;
+        private Assignment4DataSetFinal assignment4DataSetFinal;
+        private System.Windows.Forms.BindingSource table1BindingSource2;
+        private Assignment4DataSetFinalTableAdapters.Table_1TableAdapter table_1TableAdapter1;
     }
 }
 

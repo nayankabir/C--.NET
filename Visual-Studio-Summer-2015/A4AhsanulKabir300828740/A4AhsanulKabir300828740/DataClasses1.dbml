@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Assignment4" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=Assignment4;Integrated Security=True" SettingsObjectName="A4AhsanulKabir300828740.Properties.Settings" SettingsPropertyName="Assignment4ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Table_1" Member="Table_1s">
+    <Type Name="Table_1">
+      <Column Name="Title" Type="System.String" DbType="Char(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Author" Type="System.String" DbType="NChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="Price" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="Year" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
