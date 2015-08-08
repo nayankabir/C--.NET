@@ -21,28 +21,26 @@ namespace A4AhsanulKabir300828740
         private void btnReport_Click(object sender, EventArgs e)
 
         {
-            List<Book> FullList = new List<Book>();
             List<Book> SortedList = new List<Book>();
             List<Book> SelectedList = new List<Book>();
-            //List<Book> SelectedList = new List<Book>();
-            //Book[] SelectedList
-            Book ading = new Book("Java for beginners", "Mary Jane", 30, 2014);
-            FullList.Add(ading);
+            List<Book> FullList = new List<Book>();
 
-            ading = new Book("Java Enterprise", "Mary Jane", 33, 2015);
-            FullList.Add(ading);
-            ading = new Book("Practical C#", "John Smith", 20, 2015);
-            FullList.Add(ading);
-            ading = new Book("Javascript", "John Smith", 30.99, 2014);
-            FullList.Add(ading);
-            ading = new Book("Fundamentals of C++", "Mark Abel", 55, 2015);
-            FullList.Add(ading);
-            ading = new Book("Java by example", "Jim Young", 100, 2014);
-            FullList.Add(ading);
+            Book BookList = new Book("Java for beginners\t\t", "Mary Jane\t", 30, 2014);
+            FullList.Add(BookList);
+            BookList = new Book("Java Enterprise\t\t", "Mary Jane\t", 33, 2015);
+            FullList.Add(BookList);
+            BookList = new Book("Practical C#\t\t", "John Smith\t", 20, 2015);
+            FullList.Add(BookList);
+            BookList = new Book("Javascript\t\t", "John Smith\t", 30.99, 2014);
+            FullList.Add(BookList);
+            BookList = new Book("Fundamentals of C++\t", "Mark Abel\t", 55, 2015);
+            FullList.Add(BookList);
+            BookList = new Book("Java by example\t\t", "Jim Young\t", 100, 2014);
+            FullList.Add(BookList);
             try
             {
                 lbxReport.Items.Clear();
-                if (String.IsNullOrEmpty(txtAuthor.Text) && String.IsNullOrEmpty(txtTitle.Text))    //txtAuthor.Text != null && txtTitle.Text != null)
+                if (String.IsNullOrEmpty(txtAuthor.Text) && String.IsNullOrEmpty(txtTitle.Text))
                 {
                     var SelectList = from b in FullList
                                      select b;
@@ -50,41 +48,37 @@ namespace A4AhsanulKabir300828740
                     {
                         SelectedList.Add(x);
                     }
-                    //MessageBox.Show("1");
                 }
                 else if (String.IsNullOrEmpty(txtAuthor.Text))
                 {
                     var SelectList = from b in FullList
-                                     where b.Title == txtTitle.Text
+                                     where b.Title.Contains(txtTitle.Text)
                                      select b;
                     foreach (Book x in SelectList)
                     {
                         SelectedList.Add(x);
                     }
-                    // MessageBox.Show("3");
                 }
                 else if (String.IsNullOrEmpty(txtTitle.Text))
                 {
                     var SelectList = from b in FullList
-                                     where b.Author == txtAuthor.Text
+                                     where b.Author.Contains(txtAuthor.Text)
                                      select b;
                     foreach (Book x in SelectList)
                     {
                         SelectedList.Add(x);
                     }
-                    //MessageBox.Show("2");
                 }
                 else
                 {
                     var SelectList = from b in FullList
-                                     where b.Title == txtTitle.Text
-                                     where b.Author == txtAuthor.Text
+                                     where b.Title.Contains(txtTitle.Text)
+                                     where b.Author.Contains(txtAuthor.Text)
                                      select b;
                     foreach (Book x in SelectList)
                     {
                         SelectedList.Add(x);
                     }
-                    //MessageBox.Show("3");
                 }
                 if (rbPrice.Checked)
                 {
@@ -119,15 +113,10 @@ namespace A4AhsanulKabir300828740
                 {
                     lbxReport.Items.Add(a);
                 }
-
-                /* foreach (Book a in lbxReport.Items)
-                {
-                    lbxReport.Item.Remove;
-                }*/
             }
-            catch (Exception ex)
+            catch (Exception exc)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(exc.Message.ToString());
             }
         }
     }

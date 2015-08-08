@@ -146,7 +146,7 @@
             this.lbxReport.FormattingEnabled = true;
             this.lbxReport.Location = new System.Drawing.Point(46, 185);
             this.lbxReport.Name = "lbxReport";
-            this.lbxReport.Size = new System.Drawing.Size(289, 82);
+            this.lbxReport.Size = new System.Drawing.Size(497, 95);
             this.lbxReport.TabIndex = 9;
             // 
             // table1BindingSource2
@@ -201,7 +201,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(377, 304);
+            this.ClientSize = new System.Drawing.Size(612, 304);
             this.Controls.Add(this.lbxReport);
             this.Controls.Add(this.rbYear);
             this.Controls.Add(this.rbPrice);
