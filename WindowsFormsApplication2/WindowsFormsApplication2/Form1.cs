@@ -19,7 +19,7 @@ namespace WindowsFormsApplication2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //code when pressing button
+            //code when pressing buttona
         }
     }
 }
